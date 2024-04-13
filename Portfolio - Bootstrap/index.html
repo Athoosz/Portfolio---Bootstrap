@@ -10,6 +10,7 @@
          crossorigin="anonymous"
       />
       <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon">
       <title>Site pessoal</title>
       <script
          src="https://kit.fontawesome.com/287f7513a7.js"
@@ -19,11 +20,11 @@
 
    <body>
       <header
-         class="navbar navbar-expand-lg bg-dark-subtle border-bottom border-body"
+         class="navbar navbar-expand-lg bg-dark-subtle border-bottom border-body sticky-top"
          data-bs-theme="dark"
       >
          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Athos</a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo2.png" class="img-fluid" style="width: 2em" ></img>Athos</a>
             <button
                class="navbar-toggler"
                type="button"
@@ -38,18 +39,18 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#"
+                     <a class="nav-link active" aria-current="page" href="#perfil"
                         >Perfil</a
                      >
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Repositorios</a>
+                     <a class="nav-link" href="#repositorios">Repositorios</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Conteudo</a>
+                     <a class="nav-link" href="#conteudo">Conteudo</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Equipe</a>
+                     <a class="nav-link" href="#equipe">Equipe</a>
                   </li>
                </ul>
             </div>
@@ -57,7 +58,7 @@
       </header>
 
       <section class="container px-4 py-5">
-         <h2 class="pb-2 border-bottom border-black">Perfil</h2>
+         <h2 class="pb-2 border-bottom border-black" id="perfil">Perfil</h2>
          <div class="row g-4 py-5 g-2">
             <div class="col-4">
                <figure class="figure">
@@ -94,7 +95,7 @@
       </section>
 
       <section class="container px-4 py-5">
-         <h2 class="pb-2 border-bottom border-black">Repositorios</h2>
+         <h2 class="pb-2 border-bottom border-black" id="repositorios">Repositorios</h2>
          <div class="row g-4 py-5">
             <div class="col">
                <div class="card" style="width: 18rem">
@@ -154,7 +155,7 @@
       </section>
 
       <article class="container px-4 py-5">
-         <h2 class="pb-2 border-bottom border-black">Conteudo Sugerido</h2>
+         <h2 class="pb-2 border-bottom border-black" id="conteudo">Conteudo Sugerido</h2>
          <div class="row g-4 py-5">
             <div id="carouselExampleCaptions" class="carousel slide">
                <div class="carousel-indicators">
@@ -172,6 +173,24 @@
                      data-bs-slide-to="1"
                      aria-label="Slide 2"
                   ></button>
+                  <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+               ></button>
+                  <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+               ></button>
+                  <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+               ></button>
                </div>
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -190,7 +209,49 @@
                   </div>
                   <div class="carousel-item">
                      <img
-                        src="assets/img/pizza.png"
+                        src="assets/img/pizza1.png"
+                        class="d-block w-100 img-fluid img-carrosel"
+                        alt="..."
+                     />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                           Some representative placeholder content for the
+                           second slide.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="assets/img/Fanta1.png"
+                        class="d-block w-100 img-fluid img-carrosel"
+                        alt="..."
+                     />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                           Some representative placeholder content for the
+                           second slide.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="assets/img/apk1.png"
+                        class="d-block w-100 img-fluid img-carrosel"
+                        alt="..."
+                     />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                           Some representative placeholder content for the
+                           second slide.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="assets/img/hamburguer1.png"
                         class="d-block w-100 img-fluid img-carrosel"
                         alt="..."
                      />
@@ -232,7 +293,7 @@
       </article>
 
       <article class="container px-4 py-5">
-         <h2 class="pb-2 border-bottom border-black">Colegas de Trabalho</h2>
+         <h2 class="pb-2 border-bottom border-black" id="equipe">Colegas de Trabalho</h2>
          <div class="row pt-3">
             <div class="col">
                <div class="card" style="width: 18rem">
@@ -292,13 +353,13 @@
          <div class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-muted">Perfil</a>
+                  <a href="#perfil" class="nav-link px-2 text-muted">Perfil</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-muted">Repositorios</a>
+                  <a href="#repositorios" class="nav-link px-2 text-muted">Repositorios</a>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-muted">Conteudo</a>
+                  <a href="#conteudo" class="nav-link px-2 text-muted">Conteudo</a>
                </li>
             </ul>
             <p class="text-center text-muted">© 2024 Athos, Fonseca</p>
